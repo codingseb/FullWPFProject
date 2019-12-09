@@ -1,12 +1,13 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
-using System.Windows;
 
 namespace FullWPFProjectWizard
 {
     public class ConfigurationWizard : IWizard
     {
+        private ConfigViewModel viewModel = new ConfigViewModel();
+
         // This method is called before opening any item that
         // has the OpenInEditor attribute.
         public void BeforeOpeningFile(ProjectItem projectItem)
@@ -33,7 +34,12 @@ namespace FullWPFProjectWizard
             Dictionary<string, string> replacementsDictionary,
             WizardRunKind runKind, object[] customParams)
         {
-            MessageBox.Show("Hey !");
+            WizardWindow window = new WizardWindow()
+            {
+                DataContext = viewModel
+            };
+
+            window.ShowDialog();
         }
 
         // This method is only called for item templates,

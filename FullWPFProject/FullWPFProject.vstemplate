@@ -71,7 +71,7 @@
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>FullWPFProjectWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=511e5300bb3c35c7</Assembly>
+    <Assembly>FullWPFProjectWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=90064db75cdc41a1</Assembly>
     <FullClassName>FullWPFProjectWizard.ConfigurationWizard</FullClassName>
   </WizardExtension>
 </VSTemplate>

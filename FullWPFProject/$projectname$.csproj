@@ -11,7 +11,7 @@
     <PackageReference Include="CodingSeb.Behaviors" Version="*" />
     <PackageReference Include="CodingSeb.Converters" Version="*" />
     <PackageReference Include="CodingSeb.Layouts" Version="*" />
-    <PackageReference Include="CodingSeb.Localization.JsonFileLoader" Version="*" />
+$LocalizationFileLoaders$
     <PackageReference Include="CodingSeb.Localization.WPF" Version="*" />
     <PackageReference Include="CodingSeb.Mvvm" Version="*" />
     <PackageReference Include="NLog" Version="*" />
