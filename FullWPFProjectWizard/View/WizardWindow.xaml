@@ -7,9 +7,15 @@
         mc:Ignorable="d"
         d:DataContext="{x:Type local:ConfigViewModel}"
         Title="Configure Project" 
-        Height="450" 
-        Width="800" WindowStartupLocation="CenterScreen">
+        Height="300" 
+        Width="400" WindowStartupLocation="CenterScreen">
     <DockPanel>
+        <Button DockPanel.Dock="Bottom"
+                Content="_OK"
+                IsDefault="True" 
+                HorizontalAlignment="Center"
+                Padding="30,0"
+                Margin="5"/>
         <GroupBox Header="Select Localization Files Formats"
                   Margin="5">
             <ItemsControl ItemsSource="{Binding LanguageFilesFormats}">
