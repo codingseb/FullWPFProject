@@ -7,7 +7,7 @@ namespace FullWPFProjectWizard
 {
     public class ConfigurationWizard : IWizard
     {
-        private ConfigViewModel viewModel = new ConfigViewModel();
+        private readonly ConfigViewModel viewModel = new ConfigViewModel();
 
         // This method is called before opening any item that
         // has the OpenInEditor attribute.
