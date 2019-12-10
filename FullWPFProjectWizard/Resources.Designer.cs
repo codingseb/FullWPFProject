@@ -79,11 +79,11 @@ namespace FullWPFProjectWizard {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to       &lt;ProjectItem ReplaceParameters=&quot;true&quot;&gt;lang\$projectname$.loc.$format$&lt;/ProjectItem&gt;.
+        ///   Looks up a localized string similar to $projectname$.loc.$format$.
         /// </summary>
-        internal static string LanguagesFiles {
+        internal static string LocFileName {
             get {
-                return ResourceManager.GetString("LanguagesFiles", resourceCulture);
+                return ResourceManager.GetString("LocFileName", resourceCulture);
             }
         }
     }

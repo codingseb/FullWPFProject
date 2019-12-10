@@ -6,8 +6,8 @@ namespace FullWPFProjectWizard
     {
         public List<LocalizationFileFormat> LanguageFilesFormats { get; set; } = new List<LocalizationFileFormat>()
         {
-            new LocalizationFileFormat() {Text = "Json", Value = "Json", Selected = true },
-            new LocalizationFileFormat() {Text = "Yaml", Value = "Yaml"},
+            new LocalizationFileFormat() {Text = "Json", Value = "Json", Selected = true, ReplaceContent = true },
+            new LocalizationFileFormat() {Text = "Yaml", Value = "Yaml", ReplaceContent = true},
         };
     }
 }

@@ -123,7 +123,7 @@
   <data name="FileLoaderNugetReference" xml:space="preserve">
     <value>    &lt;PackageReference Include="CodingSeb.Localization.$Format$FileLoader" Version="*" /&gt;</value>
   </data>
-  <data name="LanguagesFiles" xml:space="preserve">
-    <value>      &lt;ProjectItem ReplaceParameters="true"&gt;lang\$projectname$.loc.$format$&lt;/ProjectItem&gt;</value>
+  <data name="LocFileName" xml:space="preserve">
+    <value>$projectname$.loc.$format$</value>
   </data>
 </root>

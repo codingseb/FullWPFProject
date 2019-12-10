@@ -7,5 +7,7 @@
         public string Value { get; set; }
 
         public bool Selected { get; set; }
+
+        public bool ReplaceContent { get; set; }
     }
 }
