@@ -1,6 +1,7 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace FullWPFProjectWizard
@@ -42,10 +43,16 @@ namespace FullWPFProjectWizard
 
             window.ShowDialog();
 
+            IEnumerable<LocalizationFileFormat> selectedLocalizationFileFormats = viewModel.LanguageFilesFormats
+                    .Where(lff => lff.Selected);
+
             replacementsDictionary["$LocalizationFileLoaders$"] = string.Join("\r\n",
-                viewModel.LanguageFilesFormats
-                    .Where(lff => lff.Selected)
-                    .Select(lff => Resources.FileLoaderNugetReference.Replace("$Format$", lff.Value)));
+                selectedLocalizationFileFormats
+                    .Select(localizationFileFormat => Resources.FileLoaderNugetReference.Replace("$Format$", localizationFileFormat.Value)));
+
+            replacementsDictionary["$FileLoaderAddInCode$"] = string.Join("\r\n",
+                selectedLocalizationFileFormats
+                    .Select(localizationFileFormat => Resources.FileLoaderAddInCode.Replace("$Format$", localizationFileFormat.Value)));
         }
 
         // This method is only called for item templates,

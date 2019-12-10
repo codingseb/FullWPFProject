@@ -28,7 +28,8 @@
       </Folder>
       <Folder Name="img" TargetFolderName="img">
       </Folder>
-      <ProjectItem ReplaceParameters="true">lang\$projectname$.loc.json</ProjectItem>
+      <Folder Name="lang" TargetFolderName="lang">
+      </Folder>
       <Folder Name="Model" TargetFolderName="Model">
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">

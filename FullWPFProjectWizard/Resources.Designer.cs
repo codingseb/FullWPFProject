@@ -61,11 +61,29 @@ namespace FullWPFProjectWizard {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to                 LocalizationLoader.Instance.FileLanguageLoaders.Add(new $Format$FileLoader());.
+        /// </summary>
+        internal static string FileLoaderAddInCode {
+            get {
+                return ResourceManager.GetString("FileLoaderAddInCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to     &lt;PackageReference Include=&quot;CodingSeb.Localization.$Format$FileLoader&quot; Version=&quot;*&quot; /&gt;.
         /// </summary>
         internal static string FileLoaderNugetReference {
             get {
                 return ResourceManager.GetString("FileLoaderNugetReference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to       &lt;ProjectItem ReplaceParameters=&quot;true&quot;&gt;lang\$projectname$.loc.$format$&lt;/ProjectItem&gt;.
+        /// </summary>
+        internal static string LanguagesFiles {
+            get {
+                return ResourceManager.GetString("LanguagesFiles", resourceCulture);
             }
         }
     }

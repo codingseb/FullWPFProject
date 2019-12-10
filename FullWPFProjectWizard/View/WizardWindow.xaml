@@ -13,6 +13,7 @@
         <Button DockPanel.Dock="Bottom"
                 Content="_OK"
                 IsDefault="True" 
+                Click="Button_Click"
                 HorizontalAlignment="Center"
                 Padding="30,0"
                 Margin="5"/>

@@ -25,7 +25,7 @@ namespace $safeprojectname$
         {
             try
             {
-                LocalizationLoader.Instance.FileLanguageLoaders.Add(new JsonFileLoader());
+$FileLoaderAddInCode$
 
                 LocalizationLoader.Instance.AddDirectory(LanguagesDirectoryPath);
             }

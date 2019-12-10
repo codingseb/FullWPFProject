@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FileLoaderAddInCode" xml:space="preserve">
+    <value>                LocalizationLoader.Instance.FileLanguageLoaders.Add(new $Format$FileLoader());</value>
+  </data>
   <data name="FileLoaderNugetReference" xml:space="preserve">
     <value>    &lt;PackageReference Include="CodingSeb.Localization.$Format$FileLoader" Version="*" /&gt;</value>
+  </data>
+  <data name="LanguagesFiles" xml:space="preserve">
+    <value>      &lt;ProjectItem ReplaceParameters="true"&gt;lang\$projectname$.loc.$format$&lt;/ProjectItem&gt;</value>
   </data>
 </root>
